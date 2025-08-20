@@ -1,3 +1,14 @@
 #heading {
     font-family : 'Algerian';
+    color : grey;
+}
+#title {
+    font-weight : bold;
+    font-size : 25px;
+    color : green;
+}
+#msg {
+    font-weight : bold;
+    font-size : 25px;
+    color : purple;
 }
