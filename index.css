@@ -12,3 +12,26 @@
     font-size : 25px;
     color : purple;
 }
+.card-layout{
+    text-align:center;
+    border:1px solid black;
+    height: 375px;
+    width: 285px;  
+    background-color: lightgreen;
+    padding: 5px;
+}
+.food-name{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.body-card-container{
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card-header{
+    font-weight: bold;
+}

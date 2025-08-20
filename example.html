@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion store</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+       header{
+            display: flex;
+            justify-content: space-around;
+            margin: 25px;
+       }
+       nav span{
+        margin: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+       }
+       .logo{
+        font-weight: bolder;
+        font-size: xx-large;
+        font-family: 'Times New Roman', Times, serif;
+       }
+        .nav1{
+        margin-top: 12px;
+       }
+       .cart-value{
+        background-color: red;
+        color: white;
+        display: inline-block;
+        width: 15px;
+        text-align: center;
+        border-radius: 15px;
+        margin-left: 0px;
+       }
+       .bi-cart{
+        margin: 0px;
+       }
+       article{
+        text-align: center;
+        background-color: black;
+        color: white;
+        padding: 15px;
+        padding-right: 55px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 300;
+        font-size: small;
+       }
+       .bi-lightning-charge-fill{
+        color: gold;
+       }
+       section{
+        height: 700px;
+        
+       }
+       footer{
+            background-color: #080808;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+        .foot-heading{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .email,.button{
+            padding: 10px;
+        }
+        .button{
+            background-color: rgb(149, 148, 148);
+            margin-top: 25px;
+            border-radius: 10px;
+        }
+        .footer{
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .shopper{
+            font-size: larger;
+        }
+        .footer p{
+            color: grey;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .footer h3{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        aside span{
+            color: rgb(163, 154, 154);
+        }
+        .footer-footer{
+            text-align: left;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin-left: 80px;
+            padding-top: 15px;
+            color: grey;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            Shopper.
+        </div>
+        <div class="nav1">
+            <nav>
+                <span>Home</span>
+                <span>Catalog</span>
+                <span>Shop</span>
+                <span>Pages</span>
+                <span>Blogs</span>
+                <span>Docs</span>
+            </nav>
+        </div>
+        <div>
+            <nav>
+                <span class="bi bi-search"></span>
+                <span class="bi bi-person"></span>
+                <span class="bi bi-heart"></span>
+                <span class="bi bi-cart"></span><span class="cart-value">2</span>
+            </nav>
+        </div>
+    </header>
+    <article>
+        <span class="bi bi-lightning-charge-fill"></span>
+        <span>HAPPY HOLIDAY DEALS ON EVERYTHING</span>
+        <span class="bi bi-lightning-charge-fill"></span>
+    </article>
+    <section>
+        <img src="/public/images/white-kriti-sanon-r0qhxgyqp4x0flm0.jpg" alt="Crush" height="700px" width="1405">
+    </section>
+    <footer>
+        <span class="foot-heading">Want style Ideas and Treats?</span>
+        <form>
+            <input type="email" name="email" id="email" placeholder="*Enter-email" class="email">&nbsp;&nbsp;&nbsp;
+            <input type="button" name="button" id="button" value="Subscribe" class="button">
+        </form>
+        <div class="footer">
+            <div class="shopper">
+                <h3>Shopper.</h3>
+                <aside>
+                    <span class="bi bi-facebook"></span>
+                    <span class="bi bi-youtube"></span>
+                    <span class="bi bi-twitter"></span>
+                    <span class="bi bi-instagram"></span>
+                    <span class="bi bi-medium"></span>
+                </aside>
+            </div>
+            <div class="support">
+                <h3>Support</h3>
+                <p>Contact US</p>
+                <p>FAQs</p>
+                <p>Size Guide</p>
+                <p>Shipping & Returns</p>
+            </div>
+            <div class="shop">
+                <h3>Shop</h3>
+                <p>Men's Shopping</p>
+                <p>Women's Shopping</p>
+                <p>Kids' Shopping</p>
+                <p>Discounts</p>
+            </div>
+            <div class="company">
+                <h3>Company</h3>
+                <p>Our Story</p>
+                <p>Careers</p>
+                <p>Terms & Conditions</p>
+                <p>Privacy & Cookie Policy</p>
+            </div>
+            <div class="contact">
+                <h3>Contact</h3>
+                <p>1234567890</p>
+                <p>0987654321</p>
+                <p>help@stopper.com</p>
+            </div>
+        </div>
+        <hr color="grey">
+        <div class="footer-footer">
+            <p>&copy;2024 All rights reserved.Designed by Rohit.</p>
+        </div>
+</footer>
+</body>
+</html>

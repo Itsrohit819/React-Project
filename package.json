@@ -2,8 +2,8 @@
   "name": "react-project",
   "version": "1.0.0",
   "scripts": {
-    "start" : "parcel index.html",
-    "build" : "parcel build index.html",
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -14,10 +14,12 @@
     "parcel": "^2.15.4"
   },
   "dependencies": {
+    "bootstrap": "^5.3.7",
+    "bootstrap-icons": "^1.13.1",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   },
-  "browserlist":[
+  "browserlist": [
     "defaults"
   ]
 }
