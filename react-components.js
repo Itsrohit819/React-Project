@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client'; 
 import './node_modules/bootstrap/dist/css/bootstrap.css'
 import './node_modules/bootstrap-icons/font/bootstrap-icons.css'
@@ -43,8 +43,22 @@ const App = function(){
 }
 
 const Body = function(){
+    const [RestaurantList, setRestaurantList] = useState(restaurantList);
     return(
         <div className="body-container">
+            <div style={{marginTop:'15px'}}>
+                <button 
+                    className='btn btn-success' 
+                    onClick={() => {
+                        console.log(RestaurantList);
+                        let result = restaurantList.filter(function (hotel) {
+                        return hotel.rating == "4.1";
+                        });
+                        console.log(result);
+                        setRestaurantList(result);
+                    }}> Filter Rating
+                </button>
+            </div>
             <div className="container-fluid">
                 <div className="row justify-content-center mt-4">
                     <div className="col-md-6">
@@ -66,7 +80,7 @@ const Body = function(){
                     <div className="col-12">
                         <div className="row g-4 justify-content-center">
                             {
-                                restaurantList.map(items =>
+                                RestaurantList.map(items =>
                                     (
                                         <div key={items.id} className="col-12 col-md-6 col-lg-4">
                                             <Card 
